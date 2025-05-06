@@ -1,0 +1,112 @@
+.navbar {
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .mega-menu {
+    display: none;
+    flex-direction: row; 
+    gap: 30px; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 50px;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap; 
+  }
+  
+  .mega-column {
+    flex-shrink: 0; 
+    min-width: 2px;
+  }
+  
+  
+  .nav-item:hover .mega-menu {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .mega-column {
+    flex: 1;
+    justify-content: space-around;
+  }
+  
+  .mega-column p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #BBBBBD;
+    
+  }
+  
+  .mega-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mega-column ul li {
+    margin-bottom: 8px;
+    
+  }
+  .listOne{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .lisrTT{
+    font-size: 12px;
+  }
+
+  .card1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .iphonesPics1{
+    width: 100%;
+  }
+  .card1 h1{
+    font-size: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .card1 h2{
+    font-weight: 50;
+    font-size: 30px;
+    margin-top: 1px;
+  }
+
+  .rainbow-text{
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 1), rgba(251, 7, 217, 1) , rgba(186, 12, 248, 1), rgba(95, 21, 242, 1) , rgba(28, 127, 238, 1) , rgba(47, 201, 226, 1) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+  }
+ .thewriting{
+  text-align: center;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .listOnly{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+ }

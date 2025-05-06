@@ -1,0 +1,15 @@
+.WritingBig p{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(146, 145, 145);
+
+
+}
+.WritingBig{
+    background-color: #F5F5F7;
+}
+
