@@ -43,3 +43,102 @@ font-size: 31px;
     color: rgb(98, 98, 98);
     font-family: Arial, Helvetica, sans-serif;
 }
+.shopwriting{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+    padding-top: 80px;
+    font-size: 48px;
+    font-weight: 550;
+    width: 60%;
+
+}
+.highlight {
+    color: #000000; /* for example, blue */
+  }
+  .normal-text {
+    color: #999999;
+  }
+
+.card{
+    border: none;
+    height: 148px;
+    width: 136px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 750;
+}
+.cardCom{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 313px;
+    height: 450px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cardCom .card-image{
+    width: 180px;
+    height: 257px;
+    border-radius: 10%;
+    padding-bottom: 30px;
+   
+    
+}
+.cardCom .card-title{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 0%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: flex-start;
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+}
+.cardCom .card-text{
+    font-family: Arial, sans-serif;
+    color: hsla(0, 0%, 0%, 0.738);
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    align-self:flex-start;
+
+}
+.productListPage{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clickable-card:hover {
+    transform: scale(1.05); /* makes the card pop */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* adds depth */
+  }
+  
+  .categoriesDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 90px;
+  }

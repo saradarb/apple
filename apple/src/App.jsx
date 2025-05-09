@@ -7,6 +7,7 @@ import Profile from './Components/Profile';
 import { ToastContainer } from 'react-toastify';
 import Logout from './Components/Logout';
 import Protector from './Protector';
+import Shop from './Components/Shop';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/createanaccount" element={<Createaccount />} />
       <Route path="/profile" element={<Protector> <Profile /> </Protector> }/>
       <Route path="/Logout" element={<Logout />} />
+      <Route path="/Shop" element={<Shop />} />
     </Routes>
     <ToastContainer />
   </Router>
