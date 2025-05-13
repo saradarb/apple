@@ -12,8 +12,12 @@ import ipadlogo from '../Pics/ipadcat.png';
 import iphonelogo from '../Pics/iphonecat.png';
 import accslogo from '../Pics/accessoriescat.png';
 
+
+
+
 function Shop() {
   const { categories, products } = useProducts();
+  //console.log(products)
 
   
   const [selectedCategory, setSelectedCategory] = useState(null); 
@@ -47,6 +51,9 @@ function Shop() {
       </div>
 
       <Product products={filteredProducts} />
+  
+
+      
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import someimage from '../Pics/iphonetrypic.png';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function Product({ products }) {
 
@@ -15,11 +16,13 @@ function Product({ products }) {
         const fullImageUrl = imageUrl ? `http://localhost:1337${imageUrl}` : someimage;
 
         return (
-          <div key={product.id} className="cardCom clickable-card" onClick={handleClick}>
+          <Link to={`/ProductView/${product.id}`} key={product.id}>
+           <div className="cardCom clickable-card" onClick={handleClick}>
             <img className="card-image" src={fullImageUrl} alt="product" />
-            <h2 className="card-title">{product.name}</h2>
+            <h1 className="card-title">{product.name}</h1>
             <p className="card-text">${product.price}</p>
           </div>
+          </Link>
         );
       })}
     </div>
