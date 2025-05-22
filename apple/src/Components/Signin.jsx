@@ -36,7 +36,7 @@ const handleLogin = async() => {
           hideProgressBar: true,
         });
         setUser(intitialUser)
-        navigate("/Profile")
+        navigate("/shop")
       }
     }
   } catch (error) {

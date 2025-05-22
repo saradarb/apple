@@ -3,6 +3,8 @@ import { useProductView } from './useProductView';
 import Header from './Header';
 import '../App.css';
 import WritingBig from './WritingBig';
+import { useCart } from '../CartContext';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -18,6 +20,10 @@ function ProductView() {
     setSelectedColor,
     setSelectedModel,
   } = useProductView();
+
+  
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const divid = (product) => {
     const some = product.price;
@@ -54,6 +60,24 @@ function ProductView() {
     setCurrentIndex(prev => (prev - 1 + allImages.length) % allImages.length);
     // Clear color selection when manually navigating
     setSelectedColor(null);
+  };
+
+
+  const handleAddToCart = () => {
+    const cartItem = {
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: getCurrentImage(), // Your existing image function
+      selectedColor: product.colors[selectedColor]?.name || '',
+      selectedModel: product.model[selectedModel]?.name || '',
+      quantity: selectedQuantity,
+      colorValue: product.colors[selectedColor]?.value || '', // For color display
+      modelDetails: product.model[selectedModel]?.details || '' // Additional model info
+    };
+    
+    addToCart(cartItem);
+    navigate('/Basket');
   };
 
   return (
@@ -120,7 +144,7 @@ function ProductView() {
             </div>
             <input className="ProductQuantityinput" type="number"></input>
 
-            <button className="addProductButton">Add to Bag</button>
+            <button className="addProductButton" onClick={handleAddToCart}>Add to Bag</button>
           </div>
         </div>
       </div>

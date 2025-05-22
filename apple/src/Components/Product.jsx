@@ -4,11 +4,6 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 
 function Product({ products }) {
-
-  
-  const handleClick = () => {
-  };
-
   return (
     <div className="productListPage">
       {products.map((product) => {
@@ -16,13 +11,13 @@ function Product({ products }) {
         const fullImageUrl = imageUrl ? `http://localhost:1337${imageUrl}` : someimage;
 
         return (
-          <Link to={`/ProductView/${product.id}`} key={product.id}>
-           <div className="cardCom clickable-card" onClick={handleClick}>
-            <img className="card-image" src={fullImageUrl} alt="product" />
-            <h1 className="card-title">{product.name}</h1>
-            <p className="card-text">${product.price}</p>
+          <div className="cardCom" key={product.id} >
+            <Link to={`/ProductView/${product.id}`} className="clickable-card">
+              <img className="card-image" src={fullImageUrl} alt="product" />
+              <h1 className="card-title">{product.name} </h1>
+              <p className="card-text">${product.price}</p>
+            </Link>
           </div>
-          </Link>
         );
       })}
     </div>

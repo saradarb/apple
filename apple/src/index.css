@@ -1,6 +1,6 @@
-.header{
+.header {
     display: flex;
-    align-items:end;
+    align-items: center; 
     justify-content: space-evenly;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,4 +9,12 @@
     margin: 10px;
     padding-left: 222px;
     padding-right: 222px;
+    height: 44px; 
+}
+
+/* to put them in the same line */
+.header > * {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }

@@ -85,7 +85,7 @@ font-size: 31px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-   
+    
     
 }
 .cardCom .card-image{
@@ -106,9 +106,13 @@ font-size: 31px;
     align-self: flex-start;
     padding-top: 25px;
     padding-bottom: 40px;
-    text-decoration: none;
-
+    
 }
+
+.card-title{
+  text-decoration: none;
+}
+
 .cardCom .card-text{
     font-family: Arial, sans-serif;
     color: hsla(0, 0%, 0%, 0.738);
@@ -128,12 +132,12 @@ font-size: 31px;
 
 }
 
-.clickable-card {
+.cardCom {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .clickable-card:hover {
+  .cardCom:hover {
     transform: scale(1.05); /* makes the card pop */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* adds depth */
   }
@@ -302,3 +306,53 @@ font-size: 31px;
 .justPadding{
   margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+
+.carousel-container1 {
+  position: relative;
+  width:auto;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 0px; 
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-image1 {
+  width: 875px;
+  height: 492px;
+  margin-left: 50px;
+  margin-top: 0px; 
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.carousel-button1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.carousel-button1.prev {
+  left: 0px;
+}
+
+.carousel-button1.next {
+  right: 0px;
+}
+

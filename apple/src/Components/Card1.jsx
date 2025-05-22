@@ -12,7 +12,7 @@ function Card1() {
         <div className="thewriting">
         <h1>iPhone</h1>
         <h2>Meet the iPhone 16 family</h2>
-        <div>
+        <div className="ButtonsMainPage">
         <Stack spacing={2} direction="row">
           <Button sx={{ borderRadius: '30px', fontSize: 16,  textTransform: 'capitalize', height: '55px', width: '170px'}} variant="contained">Learn more</Button>
           <Button sx={{ borderRadius: '30px',  fontSize: 16, textTransform: 'capitalize', height: '55px', width: '170px' }} variant="outlined">Shop iPhone</Button>
